@@ -18,6 +18,6 @@ public class AttendanceController {
     @PostMapping(value="/jpaAudit/attendance")
     public ResponseEntity<Attendance> saveAttendance(@RequestBody Attendance attendace){
 
-        return new ResponseEntity<Attendance>(attendanceService.saveAttendance(attendace), HttpStatus.OK);
+        return new ResponseEntity<>(attendanceService.saveAttendance(attendace), HttpStatus.OK);
     }
 }

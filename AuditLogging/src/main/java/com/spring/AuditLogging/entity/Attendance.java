@@ -9,7 +9,7 @@ import java.time.LocalDate;
 
 @Entity
 @IdClass(AttendanceID.class)
-@Table(name="attendance", schema="oper")
+@Table(name="attendance", schema="postgres")
 @NoArgsConstructor
 @Data
 public class Attendance extends AuditableBase implements Serializable {

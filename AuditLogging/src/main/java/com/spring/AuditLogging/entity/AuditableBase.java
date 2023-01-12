@@ -21,6 +21,7 @@ public abstract class AuditableBase {
 
     @Temporal(TemporalType.TIMESTAMP)
     @CreatedDate
+    @Column(name="created_at", updatable =false)
     private Timestamp createdAt;
 
     @CreatedDate
@@ -33,6 +34,7 @@ public abstract class AuditableBase {
 
     @Temporal(TemporalType.TIMESTAMP)
     @LastModifiedDate
+    @Column(name="modified_at", updatable =false)
     private Timestamp modifiedAt;
 
     @LastModifiedDate
